@@ -9,7 +9,7 @@ It also contains some extra files and directories related to testing
 (and therefore, building) those packages on Github.
 
 If you want to contribute, please read the
-[contributor guide](https://github.com/sentinelos/pkgs/blob/master/CONTRIBUTING.md).
+[contributor guide](https://github.com/sentinelos/pkgs/blob/main/CONTRIBUTING.md).
 and feel free to either submit a git patch on the Sentinel OS pkgs to submit a
 pull request on [Github](https://github.com/sentinelos/pkgs/pulls).
 
