@@ -1,4 +1,4 @@
-Sentinel OS pkgs repository
+Sentinel OS packages
 ==============================
 
 This repository contains the APKBUILD files for each and every
@@ -9,9 +9,9 @@ It also contains some extra files and directories related to testing
 (and therefore, building) those packages on Github.
 
 If you want to contribute, please read the
-[contributor guide](hhttps://github.com/sentinelos/pkgs/blob/master/CONTRIBUTING.md)
+[contributor guide](https://github.com/sentinelos/pkgs/blob/master/CONTRIBUTING.md).
 and feel free to either submit a git patch on the Sentinel OS pkgs to submit a
-pull request on [Github](https://github.com/sentinelos/pkgs).
+pull request on [Github](https://github.com/sentinelos/pkgs/pulls).
 
 
 Git Hooks
