@@ -7,7 +7,7 @@ This means you care about the quality of your contributions.
 
 ### Prerequisite for submitting patches/PR's
 
-1. Basic knowledge about how to use Git(hub)
+Basic knowledge about how to use Github:
   * [Properly](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup) setup your git client.
   * Know how to create a commit (for details see below).
   * Know how to work with git history (rebasing your commits).
