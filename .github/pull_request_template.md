@@ -1,15 +1,18 @@
-<!-- Attention Required
+### Description
+Describe why you're making this change, in plain English.
 
-Dear Contributor,
+### Testing & Reproduction steps
+* In the case of bugs, describe how to replicate
+* If any manual tests were done, document the steps and the conditions to replicate
+* Call out any important/ relevant unit tests, e2e tests or integration tests you have added or are adding
 
-Alpine Linux has moved its development to its own GitLab instance located at
-https://gitlab.alpinelinux.org/alpine. To submit your code changes for aports
-please create an account on our GitLab instance by registering or logging in
-with your GitHub account and submit it as a Merge Request (also known as a MR).
-This GitHub repository will be kept operational as a git mirror. Pull request
-made in this repository will automatically be closed by our GitHub bot.
+### Links
+Include any links here that might be helpful for people reviewing your PR (Tickets, GH issues, API docs, external benchmarks, tools docs, etc). If there are none, feel free to delete this section.
 
-Sorry for the inconvenience and happy hacking!
+Please be mindful not to leak any customer or confidential information. Sentinel OS community may want to use our internal URL shortener to obfuscate links.
 
--->
+### PR Checklist
 
+* [ ] updated test coverage
+* [ ] external facing docs updated
+* [ ] not a security concern

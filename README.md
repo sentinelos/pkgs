@@ -1,5 +1,6 @@
 Sentinel OS packages
 ==============================
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/sentinelos/pkgs)](https://github.com/sentinelos/pkgs/releases)
 
 This repository contains the APKBUILD files for each and every
 Sentinel OS package, along with the required patches and scripts,
