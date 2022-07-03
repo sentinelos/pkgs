@@ -13,7 +13,7 @@ It also contains some extra files and directories related to testing
 
 If you want to contribute, please read the
 [contributor guide](CONTRIBUTING.md).
-and feel free to either submit a [pull request](https://github.com/sentinelos/pkgs/pulls) or a [issue]https://github.com/sentinelos/pkgs/issues
+and feel free to either submit a [pull request](https://github.com/sentinelos/pkgs/pulls) or a [issue](https://github.com/sentinelos/pkgs/issues)
 
 ### Prerequisites
 
@@ -38,5 +38,4 @@ This project could not have been built without the following libraries or projec
 
 - [The linux kernel](https://www.kernel.org/)
 - [Git](https://git-scm.com/)
-- [Alpine linux](https://www.alpinelinux.org/)
-and many others developers and companies.
+- [Alpine linux](https://www.alpinelinux.org/) and many others developers and companies.
