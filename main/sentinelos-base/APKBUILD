@@ -1,18 +1,18 @@
-# Contributor: Natanael Copa <ncopa@sentineloslinux.org>
-# Maintainer: Natanael Copa <ncopa@sentineloslinux.org>
+# Contributor: Sentinel OS <os@sentinelos.io>
+# Maintainer: Sentinel OS <os@sentinelos.io>
 pkgname=sentinelos-base
 pkgver=3.16.0
 pkgrel=0
 pkgdesc="Meta package for minimal sentinelos base"
-url="https://sentineloslinux.org"
-arch="noarch"
-license="MIT"
-depends="sentinelos-baselayout sentinelos-conf apk-tools busybox busybox-suid busybox-initscripts
-	openrc libc-utils sentinelos-keys"
+url="https://github.com/sentinelos/pkgs/tree/main/main/sentinelos-base"
+arch="all"
+license="MPL-2.0"
+depends="sentinelos-base-rootfs sentinelos-keys sentinelos-conf apk-tools busybox busybox-suid busybox-initscripts
+	openrc libc-utils"
 makedepends=""
 install=""
 subpackages=""
-replaces="sentinelos-baselayout"
+replaces="sentinelos-rootfs"
 source=""
 
 build() {
@@ -45,14 +45,14 @@ NAME="SentinelOS"
 ID=sentinelos
 VERSION_ID=$pkgver
 PRETTY_NAME="SentinelOS $_rel"
-HOME_URL="https://sentineloslinux.org/"
-BUG_REPORT_URL="https://gitlab.sentineloslinux.org/sentinelos/aports/-/issues"
+HOME_URL="https://sentinelos.io/"
+BUG_REPORT_URL="https://github.com/sentinelos/pkgs/issues"
 EOF
 
 	# create secfixes.d repository list
 	mkdir -p "$pkgdir"/etc/secfixes.d
 	cat >"$pkgdir"/etc/secfixes.d/sentinelos<<EOF
-https://secdb.sentineloslinux.org/$_rel/main.json
-https://secdb.sentineloslinux.org/$_rel/community.json
+https://secdb.sentinelos.io/$_rel/main.json
+https://secdb.sentinelos.io/$_rel/community.json
 EOF
 }
