@@ -16,15 +16,15 @@ CBUILDROOT="$(CTARGET=$TARGET_ARCH . /usr/share/abuild/functions.sh ; echo $CBUI
 [ -z "$CBUILDROOT" ] && die "CBUILDROOT not set for $TARGET_ARCH"
 export CBUILD
 
-# deduce aports directory
-[ -z "$APORTS" ] && APORTS=$(realpath $(dirname $0)/../)
-[ -e "$APORTS/main/build-base" ] || die "Unable to deduce aports base checkout"
+# deduce pkgs directory
+[ -z "$PKGS" ] && PKGS=$(realpath $(dirname $0)/../)
+[ -e "$PKGS/main/build-base" ] || die "Unable to deduce pkgs base checkout"
 
 apkbuildname() {
 	local repo="${1%%/*}"
 	local pkg="${1##*/}"
 	[ "$repo" = "$1" ] && repo="main"
-	echo $APORTS/$repo/$pkg/APKBUILD
+	echo $PKGS/$repo/$pkg/APKBUILD
 }
 
 msg() {
@@ -118,10 +118,8 @@ fi
 for PKG in fortify-headers linux-headers musl libc-dev pkgconf zlib \
 	   openssl ca-certificates libmd \
 	   gmp mpfr4 mpc1 isl22 cloog libucontext binutils gcc \
-	   libbsd libretls busybox busybox-initscripts make \
-	   apk-tools file \
-	   openrc sentinelos-conf sentinelos-baselayout sentinelos-keys sentinelos-base patch build-base \
-	   attr libcap acl fakeroot tar \
+	   libbsd libretls make file sentinelos-base patch \ 
+	   build-base attr libcap acl fakeroot tar \
 	   lzip abuild ncurses libedit openssh \
 	   libcap-ng util-linux libaio lvm2 popt xz \
 	   json-c argon2 cryptsetup zstd kmod lddtree mkinitfs \

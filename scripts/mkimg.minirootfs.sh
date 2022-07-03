@@ -15,11 +15,9 @@ create_image_rootfs() {
 
 profile_minirootfs() {
 	title="Mini root filesystem"
-	desc="Minimal root filesystem.
-		For use in containers
-		and minimal chroots."
+	desc="Minimal root filesystem. For use in containers and minimal chroots."
 	image_ext=tar.gz
 	output_format=rootfs
 	arch="x86 x86_64 armhf armv7 aarch64 ppc64le s390x mips64 riscv64"
-	rootfs_apks="busybox sentinelos-baselayout sentinelos-keys apk-tools libc-utils"
+	rootfs_apks="busybox sentinelos-base-rootfs sentinelos-keys apk-tools libc-utils"
 }

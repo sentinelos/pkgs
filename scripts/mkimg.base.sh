@@ -321,7 +321,7 @@ profile_base() {
 	case "$ARCH" in
 	x86*) grub_mod="$grub_mod multiboot2 efi_uga";;
 	esac
-	apks="sentinelos-base busybox kbd-bkeymaps chrony dhcpcd e2fsprogs haveged network-extras openntpd openssl openssh tzdata wget"
+	apks="sentinelos-base kbd-bkeymaps chrony dhcpcd e2fsprogs haveged network-extras openntpd openssl openssh tzdata wget"
 	apkovl=
 	hostname="sentinelos"
 }

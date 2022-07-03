@@ -100,9 +100,7 @@ section_rpi_config() {
 profile_rpi() {
 	profile_base
 	title="Raspberry Pi"
-	desc="Includes Raspberry Pi kernel.
-		Designed for RPI 1, 2, 3 and 4.
-		And much more..."
+	desc="Includes Raspberry Pi kernel. Designed for RPI 1, 2, 3 and 4. And much more..."
 	image_ext="tar.gz"
 	arch="aarch64 armhf armv7"
 	kernel_flavors="rpi"
@@ -137,9 +135,7 @@ section_uboot() {
 profile_uboot() {
 	profile_base
 	title="Generic ARM"
-	desc="Has default ARM kernel.
-		Includes the uboot bootloader.
-		Supports armv7 and aarch64."
+	desc="Has default ARM kernel. Includes the uboot bootloader. Supports armv7 and aarch64."
 	image_ext="tar.gz"
 	arch="aarch64 armv7"
 	kernel_flavors="lts"

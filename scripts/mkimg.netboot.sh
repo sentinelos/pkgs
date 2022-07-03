@@ -9,9 +9,7 @@ create_image_netboot() {
 
 profile_netboot() {
 	title="Netboot"
-	desc="Kernel, initramfs and modloop for
-		netboot.
-		"
+	desc="Kernel, initramfs and modloop for netboot."
 	arch="aarch64 armhf armv7 ppc64le x86 x86_64 s390x"
 	kernel_cmdline="nomodeset"
 	case "$ARCH" in
