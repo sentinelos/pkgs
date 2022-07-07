@@ -47,6 +47,7 @@ VERSION_ID=$pkgver
 PRETTY_NAME="Sentinel OS $_rel"
 HOME_URL="https://sentinelos.dev/"
 BUG_REPORT_URL="https://github.com/sentinelos/pkgs/issues"
+SUPPORT_URL="https://wiki.sentinelos.dev/"
 EOF
 
 	# create secfixes.d repository list
