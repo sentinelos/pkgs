@@ -1,0 +1,40 @@
+# Contributor: Leo <thinkabit.ukim@gmail.com>
+# Maintainer: Natanael Copa <ncopa@alpinelinux.org>
+pkgname=mpg123
+pkgver=1.30.0
+pkgrel=0
+pkgdesc="Console-based MPEG Audio Player for Layers 1, 2 and 3"
+options="libtool"
+url="https://www.mpg123.org"
+arch="all"
+license="LGPL-2.1-only"
+subpackages="$pkgname-libs $pkgname-dev $pkgname-doc"
+makedepends="libtool alsa-lib-dev linux-headers"
+source="https://www.mpg123.org/download/mpg123-$pkgver.tar.bz2"
+
+build() {
+	./configure \
+		--build=$CBUILD \
+		--host=$CHOST \
+		--prefix=/usr \
+		--disable-dependency-tracking \
+		--with-pic \
+		--with-optimization=0 \
+		--with-cpu=i386_fpu \
+		--with-audio="alsa oss"
+	make
+}
+
+check() {
+	make check
+}
+
+package() {
+	# Installation is not parallel friendly and will fail
+	# sometimes
+	make -j1 DESTDIR="$pkgdir" install
+}
+
+sha512sums="
+cf508bdff1f75320c7c4d77653ba8170cc0dd8c565390cfb6ba745ce3853816071c86becff3ce304b80481d220cac2113ad244930832ccc78d3d8da74112562f  mpg123-1.30.0.tar.bz2
+"
