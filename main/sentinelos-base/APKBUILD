@@ -1,5 +1,5 @@
-# Contributor: Sentinel OS <os@sentinelos.io>
-# Maintainer: Sentinel OS <os@sentinelos.io>
+# Contributor: Sentinel OS <oss@sentinelos.email>
+# Maintainer: Sentinel OS <oss@sentinelos.email>
 pkgname=sentinelos-base
 pkgver=3.16.0
 pkgrel=0
@@ -34,25 +34,25 @@ package() {
 
 	# create /etc/issue
 	cat >"$pkgdir"/etc/issue<<EOF
-Welcome to SentinelOS $_ver
+Welcome to Sentinel OS $_ver
 Kernel \\r on an \\m (\\l)
 
 EOF
 
 	# create os-release
 	cat >"$pkgdir"/etc/os-release<<EOF
-NAME="SentinelOS"
+NAME="Sentinel OS"
 ID=sentinelos
 VERSION_ID=$pkgver
-PRETTY_NAME="SentinelOS $_rel"
-HOME_URL="https://sentinelos.io/"
+PRETTY_NAME="Sentinel OS $_rel"
+HOME_URL="https://sentinelos.dev/"
 BUG_REPORT_URL="https://github.com/sentinelos/pkgs/issues"
 EOF
 
 	# create secfixes.d repository list
 	mkdir -p "$pkgdir"/etc/secfixes.d
 	cat >"$pkgdir"/etc/secfixes.d/sentinelos<<EOF
-https://secdb.sentinelos.io/$_rel/main.json
-https://secdb.sentinelos.io/$_rel/community.json
+https://secdb.sentinelos.dev/$_rel/main.json
+https://secdb.sentinelos.dev/$_rel/community.json
 EOF
 }

@@ -1,5 +1,5 @@
 #!ipxe
 ifconf
 set sentinelos_loader true ||
-chain https://boot.sentinelos.io/boot.ipxe || shell
+chain https://boot.sentinelos.dev/boot.ipxe || shell
 exit

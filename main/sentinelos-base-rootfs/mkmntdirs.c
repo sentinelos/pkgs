@@ -1,7 +1,7 @@
 /*
  * Create mount directories in fstab
  *
- * Copyright(c) 2008 Sentinel OS <os@sentinelos.io>
+ * Copyright(c) 2008 Sentinel OS <oss@sentinelos.email>
  * May be distributed under the terms of GPL-2
  *
  * usage: mkmntdirs [fstab]

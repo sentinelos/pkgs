@@ -1,5 +1,5 @@
-# Contributor: Sentinel OS <os@sentinelos.io>
-# Maintainer: Sentinel OS <os@sentinelos.io>
+# Contributor: Sentinel OS <oss@sentinelos.email>
+# Maintainer: Sentinel OS <oss@sentinelos.email>
 pkgname=sentinelos-base-rootfs
 pkgver=3.2.0
 pkgrel=23
@@ -171,7 +171,7 @@ package() {
 
 		The Sentinel OS Wiki contains a large amount of how-to guides and general
 		information about administrating Sentinel OS systems.
-		See <https://wiki.sentinelos.io/>.
+		See <https://wiki.sentinelos.dev/>.
 
 		You can setup the system with the command: setup-sentinelos
 

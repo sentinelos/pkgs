@@ -1,5 +1,5 @@
-# Contributor: Sentinel OS <os@sentinelos.io>
-# Maintainer: Sentinel OS <os@sentinelos.io>
+# Contributor: Sentinel OS <oss@sentinelos.email>
+# Maintainer: Sentinel OS <oss@sentinelos.email>
 pkgname=sentinelos-sdk
 pkgver=1.0
 pkgrel=1

@@ -103,7 +103,7 @@ check_file_size() {
 	if [ $size -gt $FILE_SIZE_LIMIT ]; then
 		local size_kb=$(( size / 1024 ))
 
-		error "file \"$path\" is quite big ($(( size / 1024 )) kiB), better to upload it to dev.sentinelos.io"
+		error "file \"$path\" is quite big ($(( size / 1024 )) kiB), better to upload it to dev.sentinelos.dev"
 		return 1
 	fi
 }

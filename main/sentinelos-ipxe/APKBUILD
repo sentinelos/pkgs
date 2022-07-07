@@ -1,10 +1,10 @@
-# Contributor: Sentinel OS <os@sentinelos.io>
-# Maintainer: Sentinel OS <os@sentinelos.io>
+# Contributor: Sentinel OS <oss@sentinelos.email>
+# Maintainer: Sentinel OS <oss@sentinelos.email>
 pkgname=sentinelos-ipxe
 pkgver=1.20.1
 pkgrel=1
 pkgdesc="iPXE build for Sentinel OS netboot"
-url="https://boot.sentinelos.io"
+url="https://boot.sentinelos.dev"
 arch="x86 x86_64 aarch64"
 license="GPL-2.0-or-later"
 makedepends="xz-dev perl coreutils bash syslinux xorriso"

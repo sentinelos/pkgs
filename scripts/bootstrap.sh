@@ -40,7 +40,7 @@ if [ -z "$TARGET_ARCH" ]; then
 usage: $program TARGET_ARCH
 
 This script creates a local cross-compiler, and uses it to
-cross-compile an SentinelOS Linux base system for new architecture.
+cross-compile an Sentinel OS Linux base system for new architecture.
 
 Steps for introducing new architecture include:
 - adding the compiler triplet and arch type to abuild
