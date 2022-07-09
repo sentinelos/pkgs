@@ -22,7 +22,11 @@ steps:
 
 trigger:
   event:
-    - pull_request
+    branch:
+      - main
+    event:
+      - push
+    # - pull_request
 
 ---
 kind: pipeline
@@ -48,7 +52,11 @@ steps:
 
 trigger:
   event:
-    - pull_request
+    branch:
+      - main
+    event:
+      - push
+    # - pull_request
 
 ---
 kind: pipeline
@@ -74,7 +82,11 @@ steps:
 
 trigger:
   event:
-    - pull_request
+    branch:
+      - main
+    event:
+      - push
+    # - pull_request
 
 ---
 kind: pipeline
@@ -100,7 +112,11 @@ steps:
 
 trigger:
   event:
-    - pull_request
+    branch:
+      - main
+    event:
+      - push
+    # - pull_request
 
 ---
 kind: pipeline
@@ -126,5 +142,9 @@ steps:
 
 trigger:
   event:
-    - pull_request
+    branch:
+      - main
+    event:
+      - push
+    # - pull_request
 
