@@ -14,7 +14,7 @@ steps:
   - name: build
     image: alpinelinux/alpine-drone-ci:edge-x86
     commands:
-      - -c "build.sh"
+      - build.sh
     environment:
       GH_TOKEN:
         from_secret: github_token
@@ -44,7 +44,7 @@ steps:
   - name: build
     image: alpinelinux/alpine-drone-ci:edge-x86_64
     commands:
-      - -c "build.sh"
+      - build.sh
     environment:
       GH_TOKEN:
         from_secret: github_token
@@ -74,7 +74,7 @@ steps:
   - name: build
     image: alpinelinux/alpine-drone-ci:edge-aarch64
     commands:
-      - -c "build.sh"
+      - build.sh
     environment:
       GH_TOKEN:
         from_secret: github_token
@@ -104,7 +104,7 @@ steps:
   - name: build
     image: alpinelinux/alpine-drone-ci:edge-armhf
     commands:
-      - -c "build.sh"
+      - build.sh
     environment:
       GH_TOKEN:
         from_secret: github_token
@@ -134,7 +134,7 @@ steps:
   - name: build
     image: alpinelinux/alpine-drone-ci:edge-armv7
     commands:
-      - -c "build.sh"
+      - build.sh
     environment:
       GH_TOKEN:
         from_secret: github_token
