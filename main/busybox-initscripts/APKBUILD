@@ -1,5 +1,5 @@
-# Contributor: Natanael Copa <ncopa@alpinelinux.org>
-# Maintainer: Natanael Copa <ncopa@alpinelinux.org>
+# Contributor: Sentinel OS <oss@sentinelos.email>
+# Maintainer: Sentinel OS <oss@sentinelos.email>
 pkgname=busybox-initscripts
 pkgver=4.1
 pkgrel=1
@@ -12,7 +12,7 @@ makedepends=""
 install="$pkgname.post-install $pkgname.post-upgrade"
 subpackages="mdev-conf:_mdev_conf"
 checkdepends="bats"
-replaces="alpine-baselayout openntpd"
+replaces="sentinelos-base-rootfs openntpd"
 source="acpid.initd crond.initd dnsd.initd httpd.initd inetd.initd klogd.initd
 	mdev.initd ntpd.initd rdate.initd syslog.initd udhcpd.initd loadkmap.initd
 	watchdog.initd crond.confd klogd.confd ntpd.confd rdate.confd syslog.confd

@@ -7,12 +7,11 @@ pkgdesc="Meta package for minimal sentinelos base"
 url="https://github.com/sentinelos/pkgs/tree/main/main/sentinelos-base"
 arch="all"
 license="MPL-2.0"
-depends="sentinelos-base-rootfs sentinelos-keys sentinelos-conf apk-tools busybox busybox-suid busybox-initscripts
-	openrc libc-utils"
+depends="sentinelos-base-rootfs sentinelos-keys sentinelos-conf apk-tools busybox busybox-suid busybox-initscripts openrc libc-utils"
 makedepends=""
 install=""
 subpackages=""
-replaces="sentinelos-rootfs"
+replaces="sentinelos-base-rootfs"
 source=""
 
 build() {
